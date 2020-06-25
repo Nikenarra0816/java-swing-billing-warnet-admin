@@ -36,6 +36,8 @@ public class MainWindow extends javax.swing.JFrame {
         mainPanel = new javax.swing.JPanel();
         signInPanel = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
@@ -92,22 +94,41 @@ public class MainWindow extends javax.swing.JFrame {
         signInPanel.setBackground(new java.awt.Color(255, 255, 255));
         signInPanel.setLayout(new java.awt.GridLayout(1, 0));
 
-        jPanel3.setBackground(new java.awt.Color(180, 234, 246));
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture/Login 1.png"))); // NOI18N
+        jLabel15.setText("jLabel15");
+
+        jLabel16.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel16.setText("HomeInet.id");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 371, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 333, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(jLabel16)))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 378, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addGap(28, 28, 28)
+                .addComponent(jLabel16)
+                .addGap(33, 33, 33)
+                .addComponent(jLabel15)
+                .addContainerGap(51, Short.MAX_VALUE))
         );
 
         signInPanel.add(jPanel3);
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setBackground(new java.awt.Color(180, 234, 246));
 
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel1.setText("Sign In");
@@ -118,7 +139,7 @@ public class MainWindow extends javax.swing.JFrame {
         jTextField2.setBackground(new java.awt.Color(245, 245, 245));
         jTextField2.setBorder(null);
 
-        jToggleButton1.setBackground(new java.awt.Color(180, 234, 246));
+        jToggleButton1.setBackground(new java.awt.Color(255, 255, 255));
         jToggleButton1.setForeground(new java.awt.Color(67, 89, 96));
         jToggleButton1.setText("Login");
         jToggleButton1.setBorderPainted(false);
@@ -166,9 +187,9 @@ public class MainWindow extends javax.swing.JFrame {
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 101, Short.MAX_VALUE)
+                .addGap(28, 28, 28)
                 .addComponent(jToggleButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33))
+                .addContainerGap(106, Short.MAX_VALUE))
         );
 
         signInPanel.add(jPanel2);
@@ -179,7 +200,6 @@ public class MainWindow extends javax.swing.JFrame {
         dashboardTabsPanel.setLayout(new java.awt.GridLayout(1, 5));
 
         jButton1.setBackground(new java.awt.Color(180, 234, 246));
-        jButton1.setIcon(new javax.swing.ImageIcon("/home/rickyandhi/Downloads/rsz_1rsz_1rsz_illust58-4862-01.jpg")); // NOI18N
         jButton1.setText("Monitor");
         dashboardTabsPanel.add(jButton1);
 
@@ -292,7 +312,7 @@ public class MainWindow extends javax.swing.JFrame {
                         .addComponent(jLabel5)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(dashboardContentHistoryPanelLayout.createSequentialGroup()
-                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 92, Short.MAX_VALUE)
+                        .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, 92, Short.MAX_VALUE)
                         .addGap(18, 18, 18)
                         .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 321, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
@@ -305,9 +325,9 @@ public class MainWindow extends javax.swing.JFrame {
             dashboardContentHistoryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(dashboardContentHistoryPanelLayout.createSequentialGroup()
                 .addGap(21, 21, 21)
-                .addGroup(dashboardContentHistoryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel6))
+                .addGroup(dashboardContentHistoryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(dashboardContentHistoryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(dashboardContentHistoryPanelLayout.createSequentialGroup()
@@ -484,9 +504,7 @@ public class MainWindow extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(mainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 378, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(mainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 378, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -521,6 +539,8 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
